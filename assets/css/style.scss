@@ -101,6 +101,7 @@
 
 ul{
     list-style-type: none;
+    line-height: 30px;
 }
 
 .page-home .call svg {
@@ -137,9 +138,12 @@ ul{
     font-size: 35px;
 }
 
-// .intro {
-//     padding-top: 275px;
-// }
+ul li span {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Lora", "Helvetica Neue", Arial, sans-serif, -apple-system;
+    color: #1c3ed3;
+}
 
 @media
 only screen and (max-width: 760px),
