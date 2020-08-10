@@ -23,8 +23,10 @@ bodyClass: page-contact
         {% if site.data.contact.address %}
         <li><i class="fas fa-map-marker-alt"></i> <strong>Address: </strong>{{ site.data.contact.address }}
           <ul>
-            <li><span>1.</span> {{ site.data.contact.address1 }}</li>
-            <li><span>2.</span> {{ site.data.contact.address2 }}</li>
+            <!-- <li><span>1.</span> {{ site.data.contact.address1 }}</li>
+            <li><span>2.</span> {{ site.data.contact.address2 }}</li> -->
+            <li class="mt-1"><img class="address-img" src="{{site.baseurl}}/assets/images/address1.png" alt="Address 1"> {{ site.data.contact.address1 }}</li>
+            <li class="mt-1"><img class="address-img" src="{{site.baseurl}}/assets/images/address2.png" alt="Address 2"> {{ site.data.contact.address2 }}</li>
           </ul>
         </li>
         {% endif %}
