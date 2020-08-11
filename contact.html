@@ -17,16 +17,16 @@ bodyClass: page-contact
   <div class="row">
     <div class="col-12 col-md-12">
       <ul>
-        <li><i class="fas fa-phone-alt"></i> <strong>Phone: </strong>{{ site.data.contact.phone }}</li>
-        <li><i class="far fa-envelope"></i> <strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
+        <li class="mb-1"><span class="address-icon"><i class="fas fa-phone-alt"></i></span> <strong>Phone: </strong>{{ site.data.contact.phone }}</li>
+        <li class="mb-1"><span class="address-icon"><i class="far fa-envelope"></i></span> <strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
             {{ site.data.contact.email }}</a></li>
         {% if site.data.contact.address %}
-        <li><i class="fas fa-map-marker-alt"></i> <strong>Address: </strong>{{ site.data.contact.address }}
+        <li class="mb-1"><span class="address-icon"><i class="fas fa-map-marker-alt"></i></span> <strong>Address: </strong>{{ site.data.contact.address }}
           <ul>
             <!-- <li><span>1.</span> {{ site.data.contact.address1 }}</li>
             <li><span>2.</span> {{ site.data.contact.address2 }}</li> -->
-            <li class="mt-1"><img class="address-img" src="{{site.baseurl}}/assets/images/address1.png" alt="Address 1"> {{ site.data.contact.address1 }}</li>
-            <li class="mt-1"><img class="address-img" src="{{site.baseurl}}/assets/images/address2.png" alt="Address 2"> {{ site.data.contact.address2 }}</li>
+            <li class="mt-1"><span class="address-icon">1</span> {{ site.data.contact.address1 }}</li>
+            <li class="mt-1"><span class="address-icon">2</span> {{ site.data.contact.address2 }}</li>
           </ul>
         </li>
         {% endif %}

@@ -1,5 +1,5 @@
 ---
-title: RjTax
+title: Rj Tax
 layout: default
 bodyClass: page-home
 ---
@@ -18,11 +18,11 @@ bodyClass: page-home
 <div class="container pt-2">
   <div class="call">
     <div class="call-box-top">
-      <div class="call-phone"><i class="fas fa-phone-alt"></i> <strong>Phone: </strong> {{ site.data.contact.phone }} </div>
-      <div class="call-email"><i class="far fa-envelope"></i> <strong>Email: </strong>
+      <div class="call-phone mb-1"><span class="address-icon"><i class="fas fa-phone-alt"></i></span> <span class="about-contact"><strong>Phone: </strong> {{ site.data.contact.phone }}</span> </div>
+      <div class="call-email mb-1"><span class="address-icon"><i class="far fa-envelope"></i></span> <span class="about-contact"><strong>Email: </strong>
         <a href="mailto:{{ site.data.contact.email }}">
           {{ site.data.contact.email }}
-        </a>
+        </a></span>
       </div>
     </div>
     <div class="call-box-bottom">
@@ -33,7 +33,7 @@ bodyClass: page-home
 
 <div class="container pt-8 pt-md-10">
   <div class="row justify-content-start">
-    <div class="col-12">
+    <div class="col-12 header-title">
       <h2 class="title-3 text-dark mb-3">Our Services</h2>
     </div>
     {% for service in site.services %}
@@ -41,16 +41,27 @@ bodyClass: page-home
       <div class="service service-summary">
         <div class="service-content">
           <h2 class="service-title">
-            <a href="{{site.baseurl}}{{ service.url }}">{{ service.title }}</a>
-            <i class="fas fa-angle-right"></i>
+            <a>{{ service.title }}</a>
           </h2>
-          {{ service.content | markdownify | strip_html | truncate: 100 }}
+          {{ service.content | markdownify | strip_html }}
+          <br> <p class="mt-1"><a href="/contact">Contact us</a> for an obligation free quote.</p>
         </div>
       </div>
     </div>
     {% endfor %}
-    <div class="col-12 text-center">
-      <a class="button button-primary mt-2" href="{{site.baseurl}}/services">View All Services</a>
+    <!-- <div class="col-12">
+      <a class="button button-primary mt-2" href="{{site.baseurl}}/services">view all services</a>
+    </div> -->
+  </div>
+</div>
+
+<div class="container pt-5 pb-4 pt-md-7 pb-md-7">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-3">Meet The Team</h2>
+    </div>
+    <div class="col-12 col-md-6">
+      <p>RJ Tax & Accountants has been established to provide tailored and proactive advice that will be suitable to individual or business clients. </p>
     </div>
   </div>
 </div>
@@ -72,3 +83,10 @@ bodyClass: page-home
     {% endfor %}
   </div>
 </div>
+
+
+
+
+
+
+
