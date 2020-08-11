@@ -149,6 +149,56 @@ ul{
     width: 3%;
 }
 
+.footer ul li.copyright {
+    // font-weight: bold;
+    color: #ffffff;
+    display: inline-block;
+    height: 40px;
+    padding: 10px 8px 10px 8px;
+    font-family: "Lora", "Helvetica Neue", Arial, sans-serif, -apple-system;
+}
+
+.footer .footer-title {
+    min-width: 70px;
+    width: 100%;
+}
+
+.sub-footer li svg {
+    margin-bottom: 3px;
+}
+
+.sub-footer ul {
+    line-height: 22px;
+}
+
+.service-title a {
+    color: #1c3ed3 !important;
+}
+
+.footer-title a {
+    color: #ffffff;
+}
+
+.address-icon {
+    font-size: 16px;
+    background: #1c3ed3d1;
+    color: #ffffff;
+    float: left;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 8px;
+}
+
+.about-contact {
+    line-height: 30px;
+}
+
+
 @media
 only screen and (max-width: 760px),
 (min-device-width: 380px) and (max-device-width: 760px) {
