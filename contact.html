@@ -22,8 +22,8 @@ bodyClass: page-team-list
         <li class="mb-1"><span class="address-icon"><i class="far fa-envelope"></i></span> <strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
             {{ site.data.contact.email }}</a></li>
         {% if site.data.contact.address %}
-        <li class="address-card mb-1"><strong>Address: </strong>{{ site.data.contact.address }}
-          <ul>
+        <li class="mb-1"><h4 class="mt-3">Address</h4>{{ site.data.contact.address }}
+          <ul class="pl-0">
             <!-- <li><span>1.</span> {{ site.data.contact.address1 }}</li>
             <li><span>2.</span> {{ site.data.contact.address2 }}</li> -->
             <li class="mt-1"><span class="address-icon"><i class="fas fa-map-marker-alt"></i></span>  {{ site.data.contact.address1 }}</li>
@@ -33,7 +33,7 @@ bodyClass: page-team-list
         {% endif %}
       </ul>
 
-      <div class="business-hours-card">
+      <div class="business-hours-card mt-3">
         <h4 class="mt-4">Business Hours</h4>
       <table class="table table-sm opening-hours-table">
         <tr>
