@@ -185,6 +185,24 @@ ul{
     width: 100%;
 }
 
+.footer h3 {
+    margin-bottom: 0;
+    color: #ffffff;
+    font-family: "Lora", "Helvetica Neue", Arial, sans-serif, -apple-system;
+    font-size: 1.5rem;
+}
+
+.footer-logo-title-rj {
+    border-radius: 5px;
+    padding: 0px 4px;
+    // color: #ffffff;
+    // border: 1px solid #1c3ed3;
+    // background-color: #1c3ed3;
+    color: #414156;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+}
+
 .sub-footer li svg {
     margin-bottom: 3px;
 }
@@ -230,7 +248,7 @@ ul{
     color: #212529;
     display: inline-block;
     padding: 20px;
-    width: 40%;
+    width: auto;
     margin-top: 0;
 }
 
@@ -247,6 +265,11 @@ ul{
     width: 100%;
     margin-top: 0;
 }
+
+.logo-mobile {
+    width: 33px;
+}
+
 .logo-mobile a {
     display: block;
     width: 100%;
@@ -264,10 +287,16 @@ ul{
     margin-bottom: 0;
     font-family: "Lora", "Helvetica Neue", Arial, sans-serif, -apple-system;
     color: #ffffff;
-    padding: 1px;
+    padding: 1px 3px;
 }
 
+.footer h3 a {
+    color: #ffffff;
+}
 
+.footer h3 a:hover {
+    text-decoration: none;
+}
 
 // .close {
 //     visibility: initial !important;
@@ -305,6 +334,10 @@ only screen and (max-width: 760px),
 
     .footer ul li.copyright {
         padding: 10px 8px 10px 0;
+    }
+
+    .footer ul {
+        margin-top: 8px;
     }
 }
 
