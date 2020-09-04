@@ -19,10 +19,8 @@ bodyClass: page-team-list
     <div class="col-12 col-md-12 mb-5">
       <ul class="pl-0">
         <li class="mb-1"><span class="address-icon"><i class="fas fa-phone-alt"></i></span> <strong>Phone: </strong>{{ site.data.contact.phone }}</li>
-        <li class="mb-1"><span class="address-icon"><i class="far fa-envelope"></i></span> <strong>Email 1: </strong><a href="mailto:{{ site.data.contact.email1 }}">
-            {{ site.data.contact.email1 }}</a></li>
-        <li class="mb-1"><span class="address-icon"><i class="far fa-envelope"></i></span> <strong>Email 2: </strong><a href="mailto:{{ site.data.contact.email2 }}">
-            {{ site.data.contact.email2 }}</a></li>
+        <li class="mb-1"><span class="address-icon"><i class="far fa-envelope"></i></span> <strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
+            {{ site.data.contact.email }}</a></li>
         {% if site.data.contact.address %}
         <li class="mb-1"><h4 class="mt-3">Address</h4>{{ site.data.contact.address }}
           <ul class="pl-0">
